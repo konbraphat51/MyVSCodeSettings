@@ -1,0 +1,80 @@
+{
+  "workbench.editor.enablePreview": false,
+  "git.confirmSync": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.agent.thinkingTool": true,
+  "github.copilot.chat.editor.temporalContext.enabled": true,
+  "github.copilot.chat.generateTests.codeLens": true,
+  "github.copilot.chat.languageContext.fix.typescript.enabled": true,
+  "github.copilot.chat.languageContext.inline.typescript.enabled": true,
+  "github.copilot.chat.languageContext.typescript.enabled": true,
+  "github.copilot.chat.notebook.followCellExecution.enabled": true,
+  "github.copilot.enable": {
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true
+  },
+  "github.copilot.chat.scopeSelection": true,
+  "github.copilot.chat.edits.temporalContext.enabled": true,
+
+  "python.analysis.addHoverSummaries": true,
+  "python.analysis.diagnosticMode": "workspace",
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.editor.empty.hint": "hidden",
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "lualatex",
+      "tools": ["lualatex"]
+    },
+    {
+      "name": "lua_bib",
+      "tools": ["lualatex", "pbibtex(ja)", "lualatex", "lualatex"]
+    },
+    {
+      "name": "lualatex_biber",
+      "tools": ["lualatex", "biber", "lualatex", "lualatex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "lualatex",
+      "command": "lualatex",
+      "args": [
+        "--cmdx",
+        "-file-line-error",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "pbibtex(ja)",
+      "command": "pbibtex",
+      "args": ["-kanji=utf8", "%OUTDIR%/%DOCFILE%"]
+    },
+    {
+      "name": "biber",
+      "command": "biber",
+      "args": ["%OUTDIR%/%DOCFILE%"]
+    }
+  ],
+  "latex-workshop.latex.autoBuild.run": "never",
+  "explorer.confirmDelete": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "explorer.confirmDragAndDrop": false,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.generateWithTypeAnnotation": true,
+  "python.analysis.includeAliasesFromUserFiles": true,
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "python.analysis.typeEvaluation.deprecateTypingAliases": true,
+  "python.analysis.typeEvaluation.enableReachabilityAnalysis": true
+}
